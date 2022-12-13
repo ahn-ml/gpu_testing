@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+# Check if the folder exists
+if [ -d /tmp/gpu_testing ]; then
+  # Delete the folder and its contents
+  rm -rf /tmp/gpu_testing
+fi
+
 # Set the working directory
 cd /tmp/
 
