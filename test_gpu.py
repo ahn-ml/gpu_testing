@@ -6,7 +6,7 @@ from torch.utils.data import DataLoader
 # Define the MNIST classification network
 class MNISTNet(nn.Module):
 def __init__(self):
-		super(MNISTNet, self).__init__()
+	super(MNISTNet, self).__init__()
 		self.fc1 = nn.Linear(28 * 28, 128)
 		self.fc2 = nn.Linear(128, 10)
 
